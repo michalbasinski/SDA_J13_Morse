@@ -12,12 +12,16 @@ public class PlEngTranslator {
 
         // iteracja po mapie z wykorzystaniem keySet()
         for (String key : dictionary.keySet()) {
-            System.out.println(key + " : " +dictionary.get(key));
+            System.out.println(key + " : " + dictionary.get(key));
         }
 
         //iteracja po mapie z wykorzystaniem entrySetu
         for (Map.Entry<String, String> entry : dictionary.entrySet()) {
+
             System.out.println(entry);
+
+            //alternatywny sposób dostania się do wartości
+            System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
 

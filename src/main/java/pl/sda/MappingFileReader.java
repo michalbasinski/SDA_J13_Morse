@@ -21,8 +21,6 @@ public class MappingFileReader {
         try {
             FileReader fileReader = new FileReader(file);
 
-
-
         } catch (FileNotFoundException e) {
             throw new MappingFileNotFoundException();
         }

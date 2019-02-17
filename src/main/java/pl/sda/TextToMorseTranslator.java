@@ -1,6 +1,5 @@
 package pl.sda;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class TextToMorseTranslator implements Translator {
