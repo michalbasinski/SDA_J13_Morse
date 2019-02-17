@@ -17,4 +17,15 @@ public class TextToMorseTranslatorTest {
 
         Assert.assertEquals(expectedResult, result);
     }
+
+    @Test
+    public void translate2() {
+        final String textToTranslate = "sa sa sa";
+        final String expectedResult = ".../.- .../.- .../.-";
+        Translator translator = new TextToMorseTranslator();
+
+        String result = translator.translate(textToTranslate);
+
+        Assert.assertEquals(expectedResult, result);
+    }
 }

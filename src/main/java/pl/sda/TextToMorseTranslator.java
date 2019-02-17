@@ -9,6 +9,20 @@ public class TextToMorseTranslator implements Translator {
     public String translate(String textToTranslate) {
         Map<String, String> mappings = createMappings();
 
+        String[] words = textToTranslate.split(" ");
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String word : words) {
+            String translatedWord = translateWord(word, mappings);
+            stringBuilder
+                    .append(translatedWord)
+                    .append(" ");
+        }
+
+        return stringBuilder.toString().trim();
+    }
+
+    private String translateWord(String textToTranslate, Map<String, String> mappings) {
         StringBuilder stringBuilder = new StringBuilder();
         //for (Character character : textToTranslate.toCharArray()) {
         //    char character = textToTranslate.getCharAt(i);
