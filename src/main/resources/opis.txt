@@ -1,0 +1,13 @@
+Przygotuj diagram klas programu tłumaczącego tekst zapisany alfabetem Morse’a i zaimplementuj go w dowolny sposób.
+
+Sposób zapisu tekstu alfabetem Morse’a:
+    - Znaki oddzielone spacją, słowa oddzielone znakiem „/”, np.
+      Litwo ojczyzno ty moja = .-.. .. - .-- --- / --- .--- -.-. --.. -.-- --.. -. --- / - -.-- / -- --- .--- .-
+    - Małe i wielkie litery są traktowane jako ten sam znak.
+Wymagania:
+    - program pozwala na tłumaczenie tekstu w obie strony (Morse -> alfabet łaciński i alfabet łaciński -> Morse),
+    - tekst do przetłumaczenia jest wczytywany z pliku,
+    - tekst wyjściowy jest zapisywany do pliku,
+    - użycie Mavena,
+    - testy jednostkowe dla najważniejszych klas,
+    - mile widziane wykorzystanie wzorców projektowych i TDD.

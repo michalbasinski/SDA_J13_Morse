@@ -40,9 +40,10 @@ public class TextToMorseTranslator implements Translator {
     }
 
     private Map<String, String> createMappings() {
-        Map<String, String> mappings = new HashMap<>();
-        mappings.put("a", ".-");
-        mappings.put("s", "...");
+        MappingFileReader mappingFileReader = new MappingFileReader();
+
+        Map<String, String> mappings = mappingFileReader.readMappingFile();
+
         return mappings;
     }
 }
