@@ -10,7 +10,7 @@ public class TextToMorseTranslatorTest {
     @Test
     public void translate() {
         final String textToTranslate = "sa";
-        final String expectedResult = "....-";
+        final String expectedResult = ".../.-";
         Translator translator = new TextToMorseTranslator();
 
         String result = translator.translate(textToTranslate);

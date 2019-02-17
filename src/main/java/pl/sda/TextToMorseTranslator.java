@@ -10,12 +10,16 @@ public class TextToMorseTranslator implements Translator {
         Map<String, String> mappings = createMappings();
 
         StringBuilder stringBuilder = new StringBuilder();
-        // for (int i = 0; i < textToTranslate.length(); i++) {
+        //for (Character character : textToTranslate.toCharArray()) {
         //    char character = textToTranslate.getCharAt(i);
         // }
-        for (Character character : textToTranslate.toCharArray()) {
+        for (int i = 0; i < textToTranslate.length(); i++) {
+            Character character = textToTranslate.toCharArray()[i];
             String charToTranslate = character.toString();
             stringBuilder.append(mappings.get(charToTranslate));
+            if (i < textToTranslate.length() - 1) {
+                stringBuilder.append("/");
+            }
         }
 
         return stringBuilder.toString();
