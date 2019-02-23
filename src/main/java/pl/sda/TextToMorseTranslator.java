@@ -28,7 +28,7 @@ public class TextToMorseTranslator implements Translator {
         // }
         for (int i = 0; i < textToTranslate.length(); i++) {
             Character character = textToTranslate.toCharArray()[i];
-            String charToTranslate = character.toString();
+            String charToTranslate = character.toString().toLowerCase();
             stringBuilder.append(mappings.get(charToTranslate));
             if (i < textToTranslate.length() - 1) {
                 stringBuilder.append("/");
