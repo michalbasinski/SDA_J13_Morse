@@ -11,6 +11,11 @@ public class TextToMorseTranslator implements Translator {
         String[] words = textToTranslate.split(" ");
 
         StringBuilder stringBuilder = new StringBuilder();
+
+        // for (int i = 0; i < words.length(); i++) {
+        //      String word = words[i];
+        // }
+
         for (String word : words) {
             String translatedWord = translateWord(word, mappings);
             stringBuilder
